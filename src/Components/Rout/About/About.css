@@ -1,0 +1,82 @@
+.about {
+  padding: 2rem 1.6rem;
+  width: 100%;
+}
+
+.about .a-container {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about .a-container .a-box {
+  max-width: 100%;
+  padding: 10px 20px;
+  margin-top: 5px;
+  display: flex;
+  width: 270px;
+  height: 90px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.about .a-container .a-box .a-icon {
+  color: rgb(114, 77, 22);
+  font-size: 32px;
+  margin-top: 8px;
+}
+
+.about .a-container .a-box .a-detail {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.about .a-container .a-box .a-detail > p {
+  color: rgb(85, 95, 95);
+}
+
+@media (max-width: 800px) {
+  .about {
+    padding: 0.6rem 0.7rem;
+  }
+
+  .about .a-container {
+    display: flex;
+    flex-direction: grid;
+    justify-content: space-between;
+  }
+
+  .about .a-container .a-box {
+    max-width: 100%;
+    padding: 5px 14px;
+    margin-top: 5px;
+    display: flex;
+    flex: 1 1 calc(50% - 16px);
+    box-sizing: border-box;
+    width: 220px;
+    height: 90px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .about .a-container .a-box .a-icon {
+    color: rgb(114, 77, 22);
+    font-size: 20px;
+    margin-top: 8px;
+  }
+
+  .about .a-container .a-box .a-detail {
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+
+  .about .a-container .a-box .a-detail > h3 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .about .a-container .a-box .a-detail > p {
+    font-size: 14px;
+    color: rgb(85, 95, 95);
+  }
+}

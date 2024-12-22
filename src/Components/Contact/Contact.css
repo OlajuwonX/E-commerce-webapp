@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.contact-container {
+  margin: 20px 30px;
+  width: 100%;
+}
+
+.contact-container .contact-about {
+  max-width: 100%;
+  margin: 10px 20px;
+}
+
+.contact-container .contact-about .contactus {
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.contact-container .contact-about .contact-form {
+  max-width: 100%;
+  padding: 20px 30px;
+  flex-direction: wrap;
+}
+
+.contact-container .contact-about .contact-form > form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.contact-container .contact-about .contact-form > form > input {
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid;
+  width: 40%;
+  text-transform: none;
+}
+
+.contact-container .contact-about .contact-form > form > input:hover {
+  border: 1.5px solid rgba(122, 70, 28, 0.525);
+  box-shadow: rgba(168, 100, 45, 0.525) 0px 3px 8px;
+}
+
+.contact-container .contact-about .contact-form > form > textarea {
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid;
+  width: 60%;
+  height: 140px;
+}
+
+.contact-container .contact-about .contact-form > form > textarea:hover {
+  border: 1.5px solid rgba(122, 70, 28, 0.525);
+}
+.contact-container .contact-about .contact-form > form > button {
+  width: 100px;
+  margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .contact-container {
+    margin: 10px 20px;
+  }
+  
+  .contact-container .contact-about {
+    margin: 5px 10px;
+  }
+  
+  .contact-container .contact-about .contactus {
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+  
+  .contact-container .contact-about .contact-form {
+    padding: 10px 20px;
+  }
+  
+  .contact-container .contact-about .contact-form > form {
+    gap: 13px;
+  }
+  
+  .contact-container .contact-about .contact-form > form > input {
+    padding: 5px;
+    border-radius: 6px;
+    width: 90%;
+  }
+  
+  .contact-container .contact-about .contact-form > form > textarea {
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid;
+    width: 90%;
+    height: 140px;
+  }
+  
+  .contact-container .contact-about .contact-form > form > textarea:hover {
+    border: 1.5px solid rgba(122, 70, 28, 0.525);
+  }
+  .contact-container .contact-about .contact-form > form > button {
+    width: 90px;
+    margin-top: 10px;
+  }
+}

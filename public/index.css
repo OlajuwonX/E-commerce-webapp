@@ -1,0 +1,181 @@
+#modal-root {
+  position: relative;
+  z-index: 10000;
+}
+
+/* Modal Display */
+
+.i_detail {
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 72vh;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.046);
+  z-index: 1;
+  margin-left: auto;
+}
+
+.i_detail .i_container {
+  padding: 20px 30px;
+  margin-top: 13%;
+  margin-left: 5%;
+  width: 900px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    30deg,
+    rgba(168, 135, 92, 0.895) 40%,
+    rgba(224, 204, 178, 0.968) 160%
+  );
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.566) 0px 5px 8px;
+}
+
+.i_detail .i_container > button {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  margin-right: 100%;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background: none;
+}
+
+.i_detail .i_container > button:hover {
+  background: none;
+  transform: scale(1.2);
+}
+
+.i_detail .i_container .new-box {
+  max-width: 100%;
+  display: flex;
+  padding: 20px 30px;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.i_detail .i_container .new-box .new-imgbox {
+  padding: 10px;
+  width: 300px;
+  height: 400px;
+}
+
+.i_detail .i_container .new-box .new-imgbox > img {
+  width: 250px;
+  height: 250px;
+  margin-right: 10px;
+}
+
+.i_detail .i_container .new-box .new-detail {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.i_detail .i_container .new-box .new-detail > h4 {
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: rgb(85, 95, 95);
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.i_detail .i_container .new-box .new-detail > h3 {
+  font-style: 26px;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+
+.i_detail .i_container .new-box .new-detail > p {
+  font-size: 15px;
+  margin-top: 10px;
+  color: rgb(85, 95, 95);
+}
+
+.i_detail .i_container .new-box .new-detail > h2 {
+  margin-top: 10px;
+  font-size: 20px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.i_detail .i_container .new-box .new-detail .button {
+  margin-top: 5px;
+}
+
+@media (max-width: 800px) {
+  /* Modal Display */
+  .i_detail {
+    padding: 5px;
+    width: 100vw;
+    height: 69vh;
+  }
+
+  .i_detail .i_container {
+    padding: 10px 20px;
+    margin-top: 0;
+    margin-left: 0;
+    width: 95%;
+    height: 65%;
+    border-radius: 10px;
+  }
+
+  .i_detail .i_container > button {
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .i_detail .i_container .new-box {
+    padding: 10px 20px;
+    margin-top: 10px;
+  }
+
+  .i_detail .i_container .new-box .new-imgbox {
+    padding: 10px;
+    width: 170px;
+    height: 170px;
+  }
+
+  .i_detail .i_container .new-box .new-imgbox > img {
+    width: 140px;
+    height: 140px;
+    margin-right: 10px;
+  }
+
+  .i_detail .i_container .new-box .new-detail {
+    margin-top: -5px;
+    margin-left: 10px;
+  }
+
+  .i_detail .i_container .new-box .new-detail > h4 {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .i_detail .i_container .new-box .new-detail > h3 {
+    font-style: 12px;
+    margin-top: 5px;
+    font-weight: 500;
+  }
+
+  .i_detail .i_container .new-box .new-detail > p {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  .i_detail .i_container .new-box .new-detail > h2 {
+    margin-top: 5px;
+    font-size: 16px;
+  }
+
+  .i_detail .i_container .new-box .new-detail .button {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+}

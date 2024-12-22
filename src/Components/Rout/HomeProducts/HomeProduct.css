@@ -1,0 +1,212 @@
+.new-product {
+  padding: 30px 40px;
+  width: 100%;
+}
+
+.new-product > h2 {
+  font-size: 32px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.new-product .new-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.new-product .new-container .new-box {
+  padding: 20px 30px;
+  overflow: hidden;
+  width: 250px;
+  height: 380px;
+  border: 1px;
+  margin-bottom: 20px;
+  transition: all 0.5s ease-in;
+  max-width: max-content;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.new-product .new-container .new-box:hover {
+  border: none;
+  scale: 1.025;
+  background: linear-gradient(
+    180deg,
+    rgba(133, 112, 66, 0.354) 0%,
+    rgba(230, 180, 123, 0.283) 217.91%
+  );
+  box-shadow: 0px 59px 19px -51px rgba(98, 79, 51, 0.377);
+}
+
+.new-product .new-container .new-box .new-imgbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.new-product .new-container .new-box .new-imgbox > img {
+  width: 182px;
+  height: 182px;
+  margin-right: 40px;
+}
+
+.new-product .new-container .new-box .new-imgbox .new-icon {
+  position: relative;
+  right: 0;
+  z-index: 1;
+  flex-direction: column;
+  display: flex;
+  margin-top: 10px;
+  transition: 0.5s ease-in;
+}
+
+.new-product .new-container .new-box .new-imgbox:hover .new-icon {
+  transform: translateX(-40px);
+}
+
+.new-product .new-container .new-box .new-imgbox .new-icon > li {
+  list-style: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 72px 49px -51px rgba(97, 75, 40, 0.505);
+  font-size: 18px;
+  transition: 0.5s ease-in-out;
+}
+
+.new-product .new-container .new-box .new-imgbox .new-icon > li:hover {
+  background: rgba(97, 75, 40, 0.516);
+}
+
+.new-product .new-container .new-box .new-detail {
+  margin-top: 10px;
+}
+
+.new-product .new-container .new-box .new-detail > p {
+  color: rgb(85, 95, 95);
+  font-size: 14px;
+}
+
+.new-product .new-container .new-box .new-detail > h3 {
+  font-size: 16px;
+  margin-top: 5px;
+  transition: 0.5s ease-in;
+}
+
+.new-product .new-container .new-box:hover .new-detail > h3 {
+  color: rgb(95, 72, 32);
+}
+
+.new-product .new-container .new-box .new-detail > h4 {
+  margin-top: 5px;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.swiper-slide {
+  position: relative; /* Prevent it from creating a new stacking context */
+  z-index: 1;
+}
+
+.swiper-horizontal {
+  overflow: hidden;
+}
+
+.swiper-scrollbar {
+  height: 5px;
+  background: rgba(0, 0, 0, 0.2);
+  width: 70%;
+  padding-bottom: 8px;
+}
+
+.swiper-scrollbar-drag {
+  background: rgba(103, 88, 88, 0.511);
+  border-radius: 10px;
+  height: 5px;
+}
+
+@media (max-width: 800px) {
+  .new-product {
+    padding: 10px 20px;
+  }
+
+  .new-product > h2 {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+
+  .new-product .new-container .new-box {
+    padding: 10px 20px;
+    width: 280px;
+    height: 280px;
+    border: 1px;
+  }
+
+
+  .new-product .new-container .new-box:hover {
+    border: none;
+    scale: 1.025;
+    background: linear-gradient(
+      180deg,
+      rgba(133, 112, 66, 0.354) 0%,
+      rgba(230, 180, 123, 0.283) 217.91%
+    );
+    box-shadow: 0px 59px 19px -51px rgba(98, 79, 51, 0.377);
+  }
+
+  .new-product .new-container .new-box .new-imgbox > img {
+    width: 122px;
+    height: 122px;
+    margin-right: 20px;
+  }
+
+  .new-product .new-container .new-box .new-imgbox .new-icon {
+    position: relative;
+    right: 0;
+    z-index: 1;
+    margin-top: 10px;
+  }
+
+  .new-product .new-container .new-box .new-imgbox:hover .new-icon {
+    transform: translateX(5px);
+  }
+
+  .new-product .new-container .new-box .new-imgbox .new-icon > li {
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  .new-product .new-container .new-box .new-detail {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    width: 170px;
+  }
+
+  .new-product .new-container .new-box .new-detail > p {
+    color: rgb(85, 95, 95);
+    font-size: 12px;
+  }
+
+  .new-product .new-container .new-box .new-detail > h3 {
+    font-size: 13.5px;
+    margin-top: 5px;
+    transition: 0.5s ease-in;
+    font-weight: 300;
+  }
+
+
+  .new-product .new-container .new-box:hover .new-detail > h3 {
+    color: rgb(95, 72, 32);
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .new-product .new-container .new-box .new-detail > h4 {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+}

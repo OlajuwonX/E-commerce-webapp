@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.macontainer {
+  width: 100%;
+  padding: 20px 30px;
+}
+
+.macontainer .mabout {
+  max-width: 100%;
+  padding: 10px 20px;
+}
+
+.macontainer .mabout .accordion {
+  margin-top: 2rem;
+  border: none;
+}
+
+.macontainer .mabout .accordion .aItem {
+  background: rgba(140, 95, 40, 0.546);
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.macontainer .mabout .accordion .aItem .aButton {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 20px;
+  box-shadow: 0px 23px 81px -8px rgba(97, 86, 31, 0.648);
+}
+
+.macontainer .mabout .accordion .aItem .aButton .aIcon {
+  font-size: 18px;
+}
+
+.macontainer .mabout .accordion .aItem .aButton .primaryText {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.macontainer .mabout .accordion .aItem .aButton .icon {
+  font-size: 18px;
+}
+
+.macontainer .mabout .accordion .aItem .expanded {
+  border-radius: 6px;
+}
+
+@media (max-width: 800px) {
+  .macontainer {
+    padding: 5px 20px;
+  }
+
+  .macontainer .mabout {
+    padding: 5px 13px;
+  }
+
+  .macontainer .mabout .accordion {
+    margin-top: 1rem;
+  }
+
+  .macontainer .mabout .accordion .aItem {
+    background: rgba(140, 95, 40, 0.546);
+    margin-bottom: 20px;
+  }
+
+  .macontainer .mabout .accordion .aItem .aButton {
+    padding: 8px 20px;
+  }
+
+  .macontainer .mabout .accordion .aItem .aButton .aIcon {
+    font-size: 15px;
+  }
+
+  .macontainer .mabout .accordion .aItem .aButton .primaryText {
+    font-size: 12px;
+  }
+
+  .macontainer .mabout .accordion .aItem .aButton .icon {
+    font-size: 16px;
+  }
+
+  .macontainer .mabout .accordion .aItem .expanded {
+    border-radius: 6px;
+  }
+
+  /*old*/
+
+  .macontainer .mabout .accordion .aItem .aDetail {
+    font-size: 14px;
+  }
+}
